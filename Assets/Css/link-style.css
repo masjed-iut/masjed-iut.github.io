@@ -24,6 +24,48 @@ body {
   align-items: stretch;
 }
 
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-large {
+  font-weight: bold;
+  font-size: 5vw;
+  position: relative;
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1) rotate(10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(-10deg);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1) rotate(10deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotate(0deg);
+  }
+}
+
+.animation-center-text {
+  animation: textAnimation 3s infinite;
+  overflow: hidden;
+}
+
 .box {
   box-sizing: border-box;
   background: rgba(0, 40, 160, 0.25);
