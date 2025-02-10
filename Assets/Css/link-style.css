@@ -38,6 +38,13 @@ body {
   position: relative;
 }
 
+.font-mid {
+  font-weight: bold;
+  font-size: 4rem;
+  position: relative;
+  padding: 0;
+}
+
 @keyframes textAnimation {
   0% {
     opacity: 0;
